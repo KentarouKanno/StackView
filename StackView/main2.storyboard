@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Stack View-->
+        <scene sceneID="aN2-8D-uj7">
+            <objects>
+                <viewController id="BWw-nV-fjw" customClass="ViewController" customModule="StackView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dgE-P5-7de"/>
+                        <viewControllerLayoutGuide type="bottom" id="ojW-Fx-X3o"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="twx-q2-Zvi">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gIW-SE-Ehu">
+                                <rect key="frame" x="20" y="84" width="51" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="49" id="EkI-Id-mmX"/>
+                                    <constraint firstAttribute="height" constant="31" id="aYm-j9-DeA"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="EkI-Id-mmX"/>
+                                        <exclude reference="aYm-j9-DeA"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="didChangeValue:" destination="BWw-nV-fjw" eventType="valueChanged" id="lPC-4t-Nvo"/>
+                                </connections>
+                            </switch>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="GwB-f9-0SZ">
+                                <rect key="frame" x="34" y="135" width="546" height="300"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Gvm-lc-Vq2">
+                                        <rect key="frame" x="0.0" y="0.0" width="546" height="100"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="R7F-aS-1uw"/>
+                                        </constraints>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="iqI-66-JZC">
+                                        <rect key="frame" x="0.0" y="100" width="546" height="200"/>
+                                        <color key="backgroundColor" red="0.54500873139999995" green="1" blue="0.95860383520000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="YyK-of-edf"/>
+                                        </constraints>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt Lorem ipsum dolor sit er elit lamet, </string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GwB-f9-0SZ" firstAttribute="top" secondItem="gIW-SE-Ehu" secondAttribute="bottom" constant="20" id="2Pe-f4-9z3"/>
+                            <constraint firstItem="gIW-SE-Ehu" firstAttribute="top" secondItem="dgE-P5-7de" secondAttribute="bottom" constant="20" id="7AB-rm-3m4"/>
+                            <constraint firstItem="gIW-SE-Ehu" firstAttribute="leading" secondItem="twx-q2-Zvi" secondAttribute="leadingMargin" id="9O9-jj-IuX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GwB-f9-0SZ" secondAttribute="trailing" id="Rl0-co-MsY"/>
+                            <constraint firstItem="gIW-SE-Ehu" firstAttribute="leading" secondItem="twx-q2-Zvi" secondAttribute="leading" constant="20" id="Wwg-J7-lU2"/>
+                            <constraint firstItem="gIW-SE-Ehu" firstAttribute="top" secondItem="dgE-P5-7de" secondAttribute="bottom" constant="20" id="g0z-GF-5Zz"/>
+                            <constraint firstItem="GwB-f9-0SZ" firstAttribute="leading" secondItem="twx-q2-Zvi" secondAttribute="leadingMargin" constant="14" id="yyn-nH-lsI"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="7AB-rm-3m4"/>
+                                <exclude reference="Wwg-J7-lU2"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Stack View" id="grz-Ob-NMc"/>
+                    <connections>
+                        <outlet property="firstTextView" destination="Gvm-lc-Vq2" id="Ztg-Fh-ljy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gat-xU-0ZK" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1077" y="1089"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ap9-L6-nA5">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4bu-Nj-nh2" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="csz-34-L4r">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BWw-nV-fjw" kind="relationship" relationship="rootViewController" id="76B-Xh-Hbh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eik-sH-Cwk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="1089"/>
+        </scene>
+    </scenes>
+</document>
